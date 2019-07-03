@@ -54,10 +54,7 @@
                     <li class="num2">苏州链家真实在售二手房27696套</li>
                     <li class="num3">苏州链家真实租房9434套</li>
                 </ul>
-            </div>
-            <!--  search-box给定宽高，search宽高由内部内容撑开
-                  给input设置宽高，输入内容通过行高和左内边距设定
-                  和按钮一样通过父元素search定位-->
+            </div>       
             <div class="search-box">
                 <div class="menu">
                     <ul>
@@ -121,11 +118,6 @@
         </div>
     </div>
 </div>
-<!--
-    本处动画效果通过改变img位置并且相对.home-nav ul固定nav-bottom的位置实现
-    .home-nav ul的高度需设置固定值
-    有待改善
--->
 <div class="home-nav">
     <ul>
         <li>
@@ -151,7 +143,6 @@
 
 <!--链家-->
 <div class="lianjia">
-    <!--li-wrapper无法包裹住子元素-->
     <div class="lj-wrapper">
         <div class="lj-left">
             <div class="l-title"></div>
@@ -173,9 +164,7 @@
     </div>
 </div>
 
-<!--以下三块采用了flex布局-->
 <!--二手房-->
-<!--底部价格采用定位实现，用浮动由于左右字体大小不一导致底部不能对齐-->
 <div class="second-hand">
     <div class="second-top">
         <div class="second-title"></div>
@@ -255,9 +244,6 @@
 </div>
 
 <!--小区推荐-->
-<!--图片局部放大而整体大小不变实现原理，给img用一个div包裹，
-    其宽高设置为图片宽高，并设置overflow:hidden;
-    图片本身宽高设置100%-->
 <div class="xiaoqu">
     <div class="xiaoqu-wrapper">
         <div class="xiaoqu-top">
@@ -326,8 +312,6 @@
 </div>
 
 <!--新房-->
-<!--本块关于中间三部分内容相对于谁定位存在疑虑-->
-<!---->
 <div class="newhouse">
     <div class="new-top">
         <div class="new-title"></div>
@@ -399,9 +383,7 @@
                 真实存在，真实在售，真实价格，真实图片！
                 <br>
                 链家郑重向用户承诺：真实房源，假一赔百元！
-            </p>
-            <!--给整个search框定位，其宽高由内部input撑开，
-            input内容由行高及左内边距确定-->
+            </p>       
             <div class="tru-search">
                 <input type="text" placeholder="请输入链家编号查询真伪..."/>
                 <span></span>
@@ -409,7 +391,8 @@
         </div>
     </div>
 </div>
-    <!--底部-->
+
+<!--底部footer-->
 <div class="footer">
     <div class="f-wrapper">
         <div class="f-list">
@@ -422,10 +405,7 @@
                 <li><a href="">友情链接</a></li>
             </ul>
             <span>官方客服 1010 9666</span>
-        </div>
-
-        <!--此处父元素无法包裹住子元素，暂用固定高度解决，待修改
-            list-item采用定位实现-->
+        </div>    
         <div class="f-link-box">
             <div class="f-tab">
                 <div class="list">
@@ -671,9 +651,8 @@
         </ul>
     </div>
 </div>
-    <!--首页底部固定区-->
 
-</div>
+<!--首页底部固定区-->
 <div class="bottom-fixed">
     <img src="./images/index/bg3.png" alt="">
 </div>

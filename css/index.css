@@ -141,7 +141,6 @@
 }
 
 .search-box{
-    /*TODO*/
     width: 812px;
     height: 78px;
     margin: 0 auto;
@@ -149,7 +148,6 @@
     position: relative;
 }
 .menu{
-    /*border: 1px solid red;*/
     float: left;
 }
 .menu ul{
@@ -672,7 +670,6 @@
     right: 8px;
     cursor: pointer;
 }
-
 
 
 .bottom-fixed{
