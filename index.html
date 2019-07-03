@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>链家网首页</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/public.css">
+</head>
+<body>
+<div class="lianjiawang">
+<!--头部-->
+<!--wrapper中分为上中下-->
+<div class="header">
+    <div class="wrapper">
+        <div class="wra-top">
+            <div class="h-left">
+                <a class="logo" href=""></a>
+                <span class="location">
+            <i></i>
+            苏州
+        </span>
+            </div>
+            <div class="h-right">
+                <div class="r-top">
+                    <i></i>
+                    <a href="">登录</a>
+                    <a href="">立即注册</a>
+                </div>
+                <div class="r-bottom">
+                    <ul>
+                        <li><a href="">二手房</a></li>
+                        <li><a href="">新房</a></li>
+                        <li><a href="">租房</a></li>
+                        <li><a href="">海外</a></li>
+                        <li><a href="">商业办公</a></li>
+                        <li><a href="xiaoqu.html">小区</a></li>
+                        <li><a href="manager.html">经纪人</a></li>
+                        <li><a href="">指南</a></li>
+                        <li><a href="">房价</a></li>
+                        <li><a href="">工具</a></li>
+                        <li class="res-home">
+                            <i></i>
+                            <a href="">发布房源</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wra-main">
+            <div class="main-title"></div>
+            <div class="house-num">
+                <ul>
+                    <li class="num1">苏州链家在售新房楼盘400个</li>
+                    <li class="num2">苏州链家真实在售二手房27696套</li>
+                    <li class="num3">苏州链家真实租房9434套</li>
+                </ul>
+            </div>
+            <!--  search-box给定宽高，search宽高由内部内容撑开
+                  给input设置宽高，输入内容通过行高和左内边距设定
+                  和按钮一样通过父元素search定位-->
+            <div class="search-box">
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <span>找二手房</span>
+                            <div class="s-second">
+                                <input class="s-text" type="text" placeholder="请输入区域、商圈或小区名开始找房">
+                                <input class="s-btn" type="button" value="开始">
+                            </div>
+                            <i></i>
+                        </li>
+                        <li>
+                            <span>找新房</span>
+                            <div class="s-new">
+                                <input class="s-text" type="text" placeholder="请输入楼盘名称开始找房">
+                                <input class="s-btn" type="button" value="开始">
+                            </div>
+                            <i></i>
+                        </li>
+                        <li>
+                            <span>找租房</span>
+                            <div class="s-home">
+                                <input class="s-text" type="text" placeholder="请输入区域、商圈或小区名开始找房">
+                                <input class="s-btn" type="button" value="开始">
+                            </div>
+                            <i></i>
+                        </li>
+                        <li>
+                            <span>找小区</span>
+                            <div class="s-house">
+                                <input class="s-text" type="text" placeholder="请输入小区名开始查找小区">
+                                <input class="s-btn" type="button" value="开始">
+                            </div>
+                            <i></i>
+                        </li>
+                        <li>
+                            <span>搜问答</span>
+                            <div class="s-question">
+                                <input class="s-text" type="text" placeholder="房产知识有疑问？ 来搜搜看吧~">
+                                <input class="s-btn" type="button" value="开始">
+                            </div>
+                            <i></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wra-bottom">
+            <div class="pen">
+                <a href="">
+                    <img src="./images/index/header-bot1.png" alt="">
+                    关于仿冒我公司进行不正当竞争行为的郑重声明
+                </a>
+            </div>
+            <div class="pen">
+                <a href="">
+                    <img src="./images/index/header-bot2.png" alt="">
+                    房地产中介诚信服务承诺及保证书
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--
+    本处动画效果通过改变img位置并且相对.home-nav ul固定nav-bottom的位置实现
+    .home-nav ul的高度需设置固定值
+    有待改善
+-->
+<div class="home-nav">
+    <ul>
+        <li>
+            <a class="nav-detail" href="">
+                <img src="./images/index/home-nav1.png" alt="">
+                <div class="nav-bottom">
+                    <b>地图找房</b>
+                    <p>为您精准定位，位置周边配套设施一览无余</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a class="nav-detail" href="">
+                <img src="./images/index/home-nav2.png" alt="">
+                <div class="nav-bottom">
+                    <b>找出租房</b>
+                    <p>海量出租房源，质优好房专业服务全新呈现</p>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!--链家-->
+<div class="lianjia">
+    <!--li-wrapper无法包裹住子元素-->
+    <div class="lj-wrapper">
+        <div class="lj-left">
+            <div class="l-title"></div>
+            <p>
+                集二手、新房、租房功能于一体，随时随地任性找房。
+                IM匿名咨询让您放心， 消息动态推送让您省心，服务承诺让您安心，
+                数据百科锦囊让您感受贴心漫漫找房路，我们努力为您想更多。
+            </p>
+            <div class="lj-download">
+                <div class="dow-left">
+                    <a class="ios" href=""></a>
+                    <a class="android" href=""></a>
+                </div>
+                <div class="dow-right">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--以下三块采用了flex布局-->
+<!--二手房-->
+<!--底部价格采用定位实现，用浮动由于左右字体大小不一导致底部不能对齐-->
+<div class="second-hand">
+    <div class="second-top">
+        <div class="second-title"></div>
+        <p>
+            好房源那么多，我们为你精选，链家网会越来越懂你
+            <a href="">更多苏州二手房</a>
+        </p>
+    </div>
+    <div class="second-main">
+        <ul>
+            <li>
+                <div class="sec-wrap">
+                    <img src="./images/index/house1.jpg" alt="">
+                    <span class="good-house">
+                        <img src="./images/index/good-house.png" alt="">
+                    </span>
+                    <div class="wrap-bottom">
+                        <p class="position">昆山·花桥</p>
+                        <p class="position">棕榈湾</p>
+                        <p class="tips">
+                            <span>2室2厅·80.13平米</span>
+                            <span class="tips-price">135万</span>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="sec-wrap">
+                    <img src="./images/index/house2.jpg" alt="">
+                    <span class="good-house">
+                        <img src="./images/index/good-house.png" alt="">
+                    </span>
+                    <div class="wrap-bottom">
+                        <p class="position">高新·浒墅关经济技术开发区</p>
+                        <p class="position">理想家园</p>
+                        <p class="tips">
+                            <span>2室2厅·86.1平米</span>
+                            <span class="tips-price">165万</span>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="sec-wrap">
+                    <img src="./images/index/house3.jpg" alt="">
+                    <span class="good-house">
+                        <img src="./images/index/good-house.png" alt="">
+                    </span>
+                    <div class="wrap-bottom">
+                        <p class="position">相城·活力岛</p>
+                        <p class="position">招商依云华苑</p>
+                        <p class="tips">
+                            <span>3室2厅·89平米</span>
+                            <span class="tips-price">223万</span>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="sec-wrap">
+                    <img src="./images/index/house4.jpg" alt="">
+                    <span class="good-house">
+                        <img src="./images/index/good-house.png" alt="">
+                    </span>
+                    <div class="wrap-bottom">
+                        <p class="position">吴中·郭巷</p>
+                        <p class="position">旭辉美澜城</p>
+                        <p class="tips">
+                            <span>3室1厅·116平米</span>
+                            <span class="tips-price">290万</span>
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--小区推荐-->
+<!--图片局部放大而整体大小不变实现原理，给img用一个div包裹，
+    其宽高设置为图片宽高，并设置overflow:hidden;
+    图片本身宽高设置100%-->
+<div class="xiaoqu">
+    <div class="xiaoqu-wrapper">
+        <div class="xiaoqu-top">
+            <div class="xiaoqu-title"></div>
+            <p>
+                纵览小区，恋上这座城
+                <a href="">更多苏州小区</a>
+            </p>
+        </div>
+        <div class="xiaoqu-main">
+            <ul>
+                <li>
+                    <div class="xiao-wrap">
+                        <div class="xiao-img">
+                            <img src="./images/index/xiaoqu1.jpg" alt="">
+                        </div>
+                        <div class="xiao-bottom">
+                            <p class="xb-name"> 越湖家天下</p>
+                            <p class="xb-tips">
+                            <span>
+                                <label>24817</label>
+                                元/平
+                            </span>
+                                <span class="tips-time">2011年建</span>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="xiao-wrap">
+                        <div class="xiao-img">
+                            <img src="./images/index/xiaoqu2.jpg" alt="">
+                        </div>
+                        <div class="xiao-bottom">
+                            <p class="xb-name">恒基水漾花城</p>
+                            <p class="xb-tips">
+                            <span>
+                                <label>24793</label>
+                                元/平
+                            </span>
+                                <span class="tips-time">2012年建</span>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="xiao-wrap">
+                        <div class="xiao-img">
+                            <img src="./images/index/xiaoqu3.jpg" alt="">
+                        </div>
+                        <div class="xiao-bottom">
+                            <p class="xb-name">阳光天地</p>
+                            <p class="xb-tips">
+                            <span>
+                                <label>29512</label>
+                                元/平
+                            </span>
+                                <span class="tips-time">2016年建</span>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--新房-->
+<!--本块关于中间三部分内容相对于谁定位存在疑虑-->
+<!---->
+<div class="newhouse">
+    <div class="new-top">
+        <div class="new-title"></div>
+        <p>
+            真实信息准确同步，楼盘动态一手掌握
+            <a href="">更多苏州新房</a>
+        </p>
+    </div>
+
+    <div class="new-main">
+        <ul>
+            <li>
+                <a href="">
+                    <div class="bg"></div>
+                    <div class="new-img">
+                        <img src="./images/index/new1.jpg" alt="">
+                    </div>
+                    <div class="new-tips">
+                        阳光城平江悦
+                        <span>
+                            <label>17000</label>元/平
+                        </span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="bg"></div>
+                    <div class="new-img">
+                        <img src="./images/index/new2.jpg" alt="">
+                    </div>
+                    <div class="new-price">
+                        <span>一口价房源</span>
+                    </div>
+                    <div class="new-tips">
+                        绿景苏州公馆
+                        <span>
+                        <label>14500</label>
+                        元/平
+                    </span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="bg"></div>
+                    <div class="new-img">
+                        <img src="./images/index/new3.jpg" alt="">
+                    </div>
+                    <div class="new-tips">
+                        绿都苏和雅集
+                        <span>
+                        <label>35000</label>
+                        元/平
+                    </span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--链家真房源-->
+<div class="truth">
+    <div class="tru-wrapper">
+        <div class="tru-left"></div>
+        <div class="tru-right">
+            <p>
+                真实存在，真实在售，真实价格，真实图片！
+                <br>
+                链家郑重向用户承诺：真实房源，假一赔百元！
+            </p>
+            <!--给整个search框定位，其宽高由内部input撑开，
+            input内容由行高及左内边距确定-->
+            <div class="tru-search">
+                <input type="text" placeholder="请输入链家编号查询真伪..."/>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--底部-->
+<div class="footer">
+    <div class="f-wrapper">
+        <div class="f-list">
+            <ul>
+                <li><a href="">关于链家</a></li>
+                <li><a href="">联系我们</a></li>
+                <li><a href="">加入我们</a></li>
+                <li><a href="">隐私声明</a></li>
+                <li><a href="">网站地图</a></li>
+                <li><a href="">友情链接</a></li>
+            </ul>
+            <span>官方客服 1010 9666</span>
+        </div>
+
+        <!--此处父元素无法包裹住子元素，暂用固定高度解决，待修改
+            list-item采用定位实现-->
+        <div class="f-link-box">
+            <div class="f-tab">
+                <div class="list">
+                    <span>二手房</span>
+                    <div class="list-item">
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                    </div>
+                </div>
+                <div class="list">
+                    <span>热门小区</span>
+                    <div class="list-item">
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                    </div>
+                </div>
+                <div class="list">
+                    <span>二手房</span>
+                    <div class="list-item">
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                    </div>
+                </div>
+                <div class="list">
+                    <span>新房</span>
+                    <div class="list-item">
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                    </div>
+                </div>
+                <div class="list">
+                    <span>合作与友情链接</span>
+                    <div class="list-item">
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                        <a href="">镇江二手房</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="f-bottom">
+            <div class="fb-top">
+                <p>
+                    链家网（北京）科技有限公司 | 网络经营许可证 京ICP备16057509号-2 | © Copyright©2010-2019 链家网Lianjia.com版权所有 |
+                    <a href="">营业执照</a>
+                    <br>
+                    违法和不良信息举报电话：010-86440676 违法和不良信息举报邮箱：jubaoyouxiang@lianjia.com
+                </p>
+            </div>
+            <div class="fb-bottom">
+                <a href="">
+                    <img src="./images/bottom-jinghui.png" alt="">
+                    <p>京公网安备 11010802024019号</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--侧边栏-->
+<div class="sidebar">
+    <div class="sidebar-warp">
+        <ul>
+            <li class="mycart">
+                <span>
+                    <i></i>
+                    <b>待看清单</b>
+                    一次可以选择多套房源预约带看
+                    <hr>
+                </span>
+            </li>
+        </ul>
+        <div class="sidebar-line"></div>
+        <ul>
+            <li class="myfav">
+                <span>
+                    <i></i>
+                    我关注的房源
+                </span>
+            </li>
+            <li class="commpare">
+                <span>
+                    <i></i>
+                    暂无对比房源
+                    <br>
+                    <b>去选房 &gt;</b>
+                </span>
+            </li>
+        </ul>
+        <div class="sidebar-line"></div>
+        <ul>
+            <li class="sell">
+                <span>
+                    <i></i>
+                    在线卖房
+                </span>
+            </li>
+            <li class="tool">
+                <span>
+                    <i></i>
+                    房贷计算器
+                </span>
+            </li>
+        </ul>
+        <ul>
+            <li class="commit">
+                <span>
+                    <i></i>
+                    安心服务承诺
+                </span>
+            </li>
+            <li class="download">
+                <span>
+                    <i></i>
+                    <img src="./images/index/sidebar-xcx.png" alt="">
+                    <b>链家微信小程序</b>
+                </span>
+            </li>
+            <li class="phone">
+                <span>
+                    <i></i>
+                    官方客服
+                </span>
+            </li>
+            <li class="feedback">
+                <span>
+                    <i></i>
+                    反馈/投诉
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>
+    <!--首页底部固定区-->
+
+</div>
+<div class="bottom-fixed">
+    <img src="./images/index/bg3.png" alt="">
+</div>
+</body>
+</html>
